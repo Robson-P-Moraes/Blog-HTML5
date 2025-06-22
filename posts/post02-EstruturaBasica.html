@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Robson Pereira de Moraes">
+    <title>Estrutura Básica do HTML5</title>
+    <link rel="icon" href="/imagens/HTML5-Logo-PNG-Symbol-for-Web-Development-Transparent-jpg.webp">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html">Página inicial</a>
+            <a href="/posts/post01-Introducao.html">&lAarr; Post anterior</a>
+            <a href="/posts/post02.html">Próximom Post: Página 3 &rAarr;</a>
+        </nav>
+        <h1>Estrutura Básica de um Documento HTML5</h1>
+    </header>
+    <main>
+        <article>
+            <p>Todo arquivo HTML5 segue uma estrutura padrão que serve como ponto de partida. Cada parte tem uma função específica:</p>
+            <div class="estruturaDoc">
+                <pre>
+                    <code>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="pt-br"&gt;
+                        &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;title&gt;Título da Página&lt;&#47;title&gt;
+                        &lt;&#47;head&gt;
+                        &lt;body&gt;
+                            &lt;h1&gt;Título Principal&lt;&#47;h1&gt;
+                            &lt;p&gt;Este é um parágrafo&lt;&#47p&gt;
+                        &lt;&#47;body&gt;
+                        &lt;&#47;html&gt;                            
+                    </code>
+                </pre>
+                <ul>
+                    <li><b><code>&lt;!DOCTYPE html&gt;</code>:</b>
+                    Esta é a primeira linha e não é uma tag HTML. É uma declaração que informa ao navegador: "Atenção, este documento deve ser interpretado usando as regras do HTML5". Sem ela, o navegador pode entrar em um "modo de compatibilidade" e renderizar a página de forma inesperada.
+                    </li>
+
+                    <li><b><code>&lt;html lang="pt-br"&gt;</code>:</b>
+                    É a raiz que envolve todo o conteúdo da página. O atributo <code>lang="pt-br"</code> é importante para acessibilidade e SEO, ois indica que o idioma principal da página é o português do Brasil.
+                    </li>
+                    
+                    <li><b><code>&lt;head&gt;&lt;&#47;head&gt;</code>:</b>
+                    Esta seção contém metadados, ou seja, informações osbre o documento que não são exibidas diretamente no conteúdo da página.
+                    
+                    </li>
+                        <ul>
+                            <li><b><code>&lt;meta charset="UTF-8"&gt;</code>:</b>
+                            Define o conjunto de caracteres que a página usa. UTF-8 é o padrão universal e garante que caracteres especiais e acentos (como ç, á, ê) sejam exibidos corretamente.
+                            </li>
+
+                            <li><b><code>&lt;title&gt;Título da Página&lt;&#47;title&gt;</code>:</b>
+                            Define o título que aparece na aba ou janela do navegador. É um dos fatores mais importantes para o SEO.
+                            </li>
+                        </ul>
+
+                    <li><b><code>&lt;body&gt;&lt;&#47;body&gt;</code>:</b>
+                    Esta seção contém todo o conteúdo visível da página web: textos, imagens, vídeos, links, parágrafos, etc. Tudo o que o usuário final vê na tela está entre esta tag.
+                    </li>
+
+                    <li><b><code>&lt;h1&gt;Título Principal&lt;&#47;h1&gt;</code>:</b>
+                    Esta tag representa o título principal da página, tem ainda outros subtítulos <mark><code>&#40;H2 até H6&#41;</code></mark>.
+                    </li>
+
+                    <li><b><code>&lt;p&gt;Este é um parágrafo&lt;&#47p&gt;</code>:</b>
+                    Esta tag representa o parágrafo de um texto.
+                    </li>
+
+                    <li><b><code>&lt;&#47;html&gt;</code>:</b>
+                    Esta tag define o final da página em HTML.
+                    </li>
+                </ul>
+            </div>
+                    
+        </article>
+    </main>
+        <nav>
+            <a href="/index.html">Página inicial</a>
+            <a href="/posts/post01-Introducao.html">&lAarr; Post anterior</a>
+            <a href="/posts/post02.html">Próximom Post: Página 3 &rAarr;</a>
+        </nav>
+    <footer>
+        Blog Desenvolvido por Robson Pereira de Moraes - <a href="https://robsondevs.com.br">RosbonDevs - Programação para todos - 2025</a>
+    </footer>
+</body>
+</html>
